@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+  {{ .Content }}
+  
+  <div class="container d-flex justify-content-center align-items-center">
+    <a href="time" class="btn btn-outline-light btn-lg m-2 fw-bold" role="button">Laika atskaite</a>
+    <a href="colors.html" class="btn btn-outline-light btn-lg m-2 fw-bold" role="button">Krāsu maiņa</a>
+  </div>
+
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+{{ end }}
